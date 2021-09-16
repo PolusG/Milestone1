@@ -1,26 +1,34 @@
 # Milestone1
 team Github repository: https://github.com/lianh9/Milestone1.git
 Team member names and Github users :
+Lian Huang, lianh9
 
 
 
 # Use Case Description
 
-Date:
+Date:9/15/2021
 
 Product Name:
 
 Problem Statement:
 
 Non-functional Requirements:
+1. The response time should be within 2 seconds.
+2. The App shoule be user friendly and easy to use.
+3. App should be able to install on Windoms or Mac.
 
 
+# Use cases
+1.Muti-language
+2.User register and login
+3.Delete account
+4.Share notes with other people
 
 
-
-Use Case Name: Change system language to Chinese
+Use Case Name: Change system language 
 ## Summary
-A student/user who logged in can change the system language to Chinese
+A student/user who logged in can change the system language 
 ## Actors
 actor : Student/User
 ## Preconditions
@@ -32,7 +40,7 @@ step 1 action: System prompts the user other available languages list.
 step 2 action: User selects the language they want.
 Step 3 action: System changes the language.
 ## Primary Postconditions
-* postcondition: The user changed the system language to Chinese
+* postcondition: The user changed the system language
  
 Use Case Name: User register and login
 ## Summary
