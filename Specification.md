@@ -39,6 +39,14 @@ Non-functional Requirements:
 
 8.convert markdown notes to pdf
 
+9.Todo tracker
+
+10.Visualize hours worked and projects
+
+11.Visualize time blocks
+
+12.Create graph of connections between notes
+
 
 
 Use Case Name: Change system language 
@@ -229,4 +237,120 @@ User clicks on the “Convert note to PDF”
 ## Alternate Sequences
 ### Alternate Trigger
 ### Alternate Postconditions
+
+Use Case Name: Todo tracker
+## Summary
+A student who has logged in can see what tasks there are to complete and are already completed
+## Actors
+The student.
+## Preconditions
+The student has logged in and there is at least one task.
+## Triggers
+Student selects to view tracker.
+
+## Primary Sequence
+1. The system displays the task to be completed and marks the completed tasks.
+2. The system prompts the student to the next available task.
+3. The student confirms they wish to proceed with the task.
+4. The system leads the student to the task.
+5. System returns “You are on the task [tasnk name]”.
+6. The system displays the completion percentage of the task.
+
+## Alternative sequence
+The student does not select a task.
+The system displays a message to remind the student.
+
+## Primary Postconditions
+The student starts a new task
+The selected task is displayed
+OR
+The student does select a task.
+Todo list remains the same
+
+Use Case Name: Visualize hours worked and projects
+## Summary
+A student who has logged in can see how many hours they have worked in total and for each project
+## Actors
+The student.
+## Preconditions
+The student has logged in.
+## Triggers
+Student selects to view hours worked.
+
+## Primary Sequence
+1. The system displays the projects.
+2. The system displays the total hours worked.
+3. The system can choose to view the hours worked on a specific project.
+4. The student clicks to visualize the hours worked.
+5. The system shows a chart to the student with information on hours worked.
+
+## Alternative sequence
+The student does not visualize.
+The system does not display anything.
+
+## Primary Postconditions
+Student tracks the hours worked
+The student chooses to visualize the hours worked
+A chart is displayed.
+OR
+The student does visualize.
+Screen remains the same.
+
+
+
+Use Case Name: Visualize time blocks
+## Summary
+A student who has logged in can view a calendar-like view to see their tasks for the week.
+## Actors
+The student.
+## Preconditions
+The student has logged in.
+## Triggers
+Student selects to visualize time blocks.
+
+## Primary Sequence
+1. The system prompts the user for the option to visualize time blocks.
+2. The student confirms to visualize time blocks.
+3. The student views the items to do for the week.
+4. The student clicks a task and accesses the task.
+5. The system crosses the tasks completed from the visualization.
+
+## Alternative sequence
+The student does not visualize.
+The system does not display anything.
+
+## Primary Postconditions
+The student visualizes the time blocks
+A calendar view is presented to students with tasks to complete
+The student selects a task.
+OR
+The student does visualize.
+The screen remains the same.
+
+
+Use Case Name: Create graph of connections between notes
+## Summary
+The system will create connections between notes using a graph algorithm.
+## Actors
+The system.
+## Preconditions
+There are at least one note to serve as a note.
+## Triggers
+Automatically triggered.
+
+## Primary Sequence
+1.The system checks the server for the existence of notes.
+2.After confirming the existence the system will place the notes as nodes..
+3.The system will create a bi-directional graph where the edges will serve both ways.
+
+## Alternative sequence
+There are no notes
+The system does not do anything..
+
+## Primary Postconditions
+The system creates the graph
+Now both the system and the student can easily navigate between notes and can be used to implement new features
+OR
+The system does not create a graph.
+The system will wait until there is enough note(s).
 
