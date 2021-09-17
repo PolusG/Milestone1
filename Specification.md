@@ -7,6 +7,7 @@ Lian Huang, lianh9
 
 Wisely Chan, wiselyc
 
+Pulos Gorgees, PolusG
 
 # Use Case Description
 
@@ -353,4 +354,106 @@ Now both the system and the student can easily navigate between notes and can be
 OR
 The system does not create a graph.
 The system will wait until there is enough note(s).
+
+Use case name: find text in files
+##Summary
+The student logged in the app can find a specific text in files.
+##Actors
+The student and the file.
+##Pre condition
+The student is logged in and has the file open.
+##Trigger
+The student clicks command + f.
+##Primary sequence
+The system prompts the student to enter letters.
+The Student writes the word or letter they are looking for.
+System checks if what the student entered is available in the file.
+System highlights the word the student entered throughout the file.
+Student checks all the highlighted text.
+##Alternative sequence
+The student entered text not available in the file.
+System sends the student a message indicating that the text is not available in the file.
+##Post condition
+The student looks at the text highlighted by the system.
+##Non functional requirements
+The system highlights the text entered within 0.5 seconds.
+The system tells the student to enter a different text.
+##Functional requirements
+The system can highlight the searched text.
+The system can show many times the text entered is mentioned in the file.
+
+Use case name: Change order of flash cards based on how often user got answer correct.
+##Summary
+The system shuffles the flash cards when a student gets a correct answer.
+##Actors
+The student and the flash cards.
+##Pre condition
+The student logged on.
+##Trigger
+Student picked the correct answer.
+##Primary sequence
+The student gets the correct answer.
+The system shuffles the remaining flashcards.
+The system finds the student another flashcard chosen at random.
+##Alternative sequence
+The student gets the incorrect answer.
+System does not shuffle cards and tells the student to try again.
+##Post condition
+The student gets the correct answer and moves on to the next flashcard.
+Or the student gets the incorrect answer and tries again.
+##Non functional requirements 
+The system takes 1 second to shuffle the cards.
+##Functional requirements 
+The system successfully changes the order of flashcards if the student gets the correct answer.
+The system moves on to the next flashcard available.
+
+Use case name: Use pomodoro timer
+## Summary
+The system helps the student with their time management by organizing a period of time in which the student is working and a period of time in which the student takes a break.
+## Actors
+The student and the pomodoro timer.
+## Pre condition 
+The student is logged in.
+##Trigger
+The student clicks on “use pomodoro timer” button.
+## Primary sequence
+The student activates the pomodoro timer by clicking the button.
+The system tells the student to do a certain task for 25 minutes.
+After 25 minutes the system makes a ringer noise for 5 seconds and tells the student to enter how far they got into the task and take a 5 minute break.
+After a 5 minute break the system rings again notifying the student to get back to work for another 25 minutes.
+After four 25 minute work periods the system tells the student to take a longer break (15-30 minutes).
+The system repeats the cycle until the student turns off the pomodoro timer by clicking the “turn off pomodoro timer” button.
+## Alternative sequence
+The student accidentally exits the app.
+The pomodoro timer pauses.
+## Post condition 
+The student uses the pomodoro timer to better manage their time and work more efficiently.
+## functional requirements 
+The system activates a ringer when the timer goes off.
+The pomodoro timer has an option to pause and continue the timer.
+
+Use case name: creating time blocks(using markdown)
+##summary
+Using markdown, the student can make time blocks to help organize their schedule.
+##Actors
+Student and markdown.
+##pre condition
+Student has logged in.
+#Trigger
+The student clicks a button at the top of the app to open a file. Once the file is opened the student can then access time blocks.
+##primary sequence
+The student open a file by clicking on the markdown button at the top of the page
+In the file the student can enter < !-- Time Blocks -- >.
+After that the student can enter ~~ science ~~ (or it could be any other subject or a specific project.
+The student clicks enter.
+The system will display a message, for example “from 3pm-5pm work on science.”
+## Alternative sequence 
+The student enters text the system can not read.
+System displays a message “unvalid text entry.”
+## post condition
+The student has time blocks to help them study.
+## non functional requirements
+The system responds within 1 second.
+## functional requirements
+System displays a message. 
 
